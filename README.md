@@ -1,11 +1,12 @@
 # simple-pki
 
+A simple tool for syncing a users GitHub SSH public keys to various remote machines `authorized_keys` config.
+
 A simple, lightweight CLI tool to manage SSH authorized keys by syncing them with GitHub public keys. It allows you to grant SSH access to servers based on GitHub identities.
 
 ## Features
 
 - **GitHub Integration**: Fetch public SSH keys directly from GitHub users (`github.com/username.keys`).
-- **User Verification**: Verifies GitHub usernames and displays metadata before adding.
 - **Automated Sync**: Optional cron job integration to keep keys up-to-date automatically.
 - **Safety**: Backs up existing `authorized_keys` before overwriting.
 - **Configurable**: Stores configuration in `~/.config/simple-pki/config.json`.
